@@ -1,0 +1,40 @@
+.footer {
+  max-width: 1250px;
+  margin: 20px;
+}
+
+.footer-conteudo {
+  background: #758767;
+  height: 60px;
+  border-radius: 6px;
+  text-align: center;
+  padding-top: 20px;
+  align-content: center;
+}
+.footer-conteudo h2 {
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .footer-conteudo h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-conteudo {
+    height: 40px;
+  }
+  .footer-conteudo h2 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-conteudo {
+    height: 20px;
+  }
+  .footer-conteudo h2 {
+    font-size: 0.8rem;
+  }
+}

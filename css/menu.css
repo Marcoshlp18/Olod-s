@@ -1,0 +1,125 @@
+.header-bg {
+  background: #ddffbb;
+  align-items: center;
+  justify-content: center;
+  max-width: 1250px;
+  margin: 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  align-items: center;
+}
+
+.header-menu a {
+  display: inline-block;
+  position: relative;
+  padding: 20px;
+  color: #111;
+  font-size: 2rem;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 4px;
+  background: #a4bc92;
+  position: absolute;
+  transition: 0.4s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .header-menu a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 810px) {
+  .header-menu a {
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+    color: #111;
+    position: relative;
+    font-size: 1.1rem;
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+
+  .header-menu a:hover {
+    color: #b3c99c;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 650px) {
+  .header-menu {
+    gap: 20px;
+  }
+
+  .header-menu a {
+    font-size: 1rem;
+    padding: 5px;
+  }
+
+  .header-menu a:hover {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-menu {
+    gap: 10px;
+  }
+  .header-menu a {
+    font-size: 0.95rem;
+    padding: 2px;
+  }
+
+  .header-menu a:hover {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 390px) {
+  .header-menu {
+    gap: 8px;
+  }
+  .header-menu a {
+    font-size: 0.6rem;
+  }
+
+  .header-menu a:hover {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .header-menu {
+    gap: 6px;
+  }
+  .header-menu a {
+    font-size: 0.5rem;
+  }
+
+  .header-menu a:hover {
+    font-size: 0.6rem;
+  }
+}
