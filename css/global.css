@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #c7e9b0;
   max-width: 1300px;
@@ -31,4 +35,19 @@ img {
 img:hover {
   filter: grayscale(0);
   transition: 0.5s;
+}
+
+.btn-bg {
+  background: linear-gradient(#ddffbb, #c7e9b0, #b3c99c, #a4bc92);
+  height: 50px;
+  width: 50px;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  transition: 0.15s;
+}
+
+.btn img {
+  width: 50px;
 }
